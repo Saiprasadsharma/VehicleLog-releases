@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vehicle Log Privacy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one readable column of legal text, same tokens as the home page. */
+:root {
+  --bg: #f3f4f6;
+  --surface: #ffffff;
+  --ink: #16191f;
+  --muted: #5b6270;
+  --line: #dfe2e8;
+  --accent: #d9581b;        /* the app's Ember orange */
+  --accent-ink: #ffffff;
+  --accent-soft: #fbe6da;
+  --phone: #0f1217;
+  --phone-card: #1b1f27;
+  --phone-pill: #262b35;
+  --phone-ink: #eef0f4;
+  --phone-muted: #9aa1ad;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1116; --surface: #171b22; --ink: #eceef2; --muted: #9ba2ae; --line: #262b34;
+    --accent: #f07a3c; --accent-ink: #1a0d05; --accent-soft: #3a2216;
+    --phone: #05070a; --phone-card: #161a21; --phone-pill: #222731;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1116; --surface: #171b22; --ink: #eceef2; --muted: #9ba2ae; --line: #262b34;
+  --accent: #f07a3c; --accent-ink: #1a0d05; --accent-soft: #3a2216;
+  --phone: #05070a; --phone-card: #161a21; --phone-pill: #222731;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.7 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+a { color: var(--accent); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.doc { max-width: 720px; margin: 0 auto; padding-block: 24px 56px; }
+.back { font: 500 14px var(--body); color: var(--muted); text-decoration: none; }
+.back:hover { color: var(--ink); }
+h1 { font: 800 clamp(34px, 6vw, 48px)/1.05 var(--display); letter-spacing: -0.01em; margin: 28px 0 8px; text-wrap: balance; }
+.date { font: 500 13px var(--mono); color: var(--muted); }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 22px; margin: 28px 0 8px; }
+.summary p { margin: 0; }
+h2 { font: 700 22px/1.25 var(--display); margin: 40px 0 10px; text-wrap: balance; }
+p, li { color: var(--ink); }
+ul { padding-left: 1.2em; display: grid; gap: 6px; }
+.table { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; margin-top: 12px; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 13px var(--body); color: var(--muted); background: var(--surface); }
+tr:last-child td { border-bottom: 0; }
+footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 20px; display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<main class="doc">
+  <a class="back" href="index.html">← Vehicle Log</a>
+  <h1>Privacy policy</h1>
+  <p class="date">Effective 12 November 2026</p>
+
+  <div class="summary"><p><b>In short:</b> what you log stays on your phone. Backups go to your own Google Drive or a file you keep. If you choose to sign in, only your name and email are saved. There are no ads and nothing is sold.</p></div>
+
+  <h2>What stays on your phone</h2>
+  <p>Your vehicles, fill-ups, expenses, services, income, odometer readings, reminders, trips, parts, documents, lists, photos of receipts and documents, and your settings are stored in the app's private storage on your phone. Other apps can't read them. We have no server that receives them.</p>
+  <p>Uninstalling the app or clearing its data deletes them, so keep a backup.</p>
+
+  <h2>What leaves your phone, and why</h2>
+  <div class="table"><table>
+    <thead><tr><th>When</th><th>What is sent</th><th>To</th></tr></thead>
+    <tbody>
+      <tr><td>You turn on Drive backup</td><td>A backup of your data, photos and settings</td><td>A hidden app folder in <b>your own</b> Google Drive. Only this app can see it; we can't.</td></tr>
+      <tr><td>You search for or pick a nearby pump or place</td><td>Your location, or the text you searched</td><td>Google Places, or OpenStreetMap (Overpass, Nominatim) if Google isn't available</td></tr>
+      <tr><td>A map is shown</td><td>The map area being shown</td><td>CARTO / OpenStreetMap map tiles</td></tr>
+      <tr><td>You sign in with Google (optional)</td><td>Your name, email, app version, Android version, number of vehicles, first and last time seen</td><td>Google Firebase, so we know who uses the app</td></tr>
+      <tr><td>You use the app</td><td>Anonymous usage counts (app opens, app version, device type, country) and crash reports</td><td>Google Firebase Analytics and Crashlytics</td></tr>
+      <tr><td>The app checks for updates</td><td>A request for the list of releases</td><td>GitHub</td></tr>
+      <tr><td>You tap Report a problem</td><td>App and phone details, and the last crash if any, in an email or message you choose to send</td><td>Your own email app</td></tr>
+    </tbody>
+  </table></div>
+  <p>None of these include your fill-ups, expenses or other records, except your own Drive backup.</p>
+
+  <h2>Permissions the app asks for</h2>
+  <ul>
+    <li><b>Location</b>: to pick the pump you're at and to put trip stops on a map. Only while you use those features.</li>
+    <li><b>Notifications</b>: for reminders, summaries and update alerts.</li>
+    <li><b>Nearby devices (Bluetooth)</b>: optional, to notice when your phone connects to your car, for trip and reading prompts.</li>
+    <li><b>Install apps</b>: so the app can install its own updates when you tap Update.</li>
+  </ul>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Use the app without signing in. Everything works the same.</li>
+    <li>Sign out any time under More. To have your profile deleted, send a request through More → Report a problem.</li>
+    <li>Turn off Drive backup, or delete the backup from your Google Drive settings (Manage apps).</li>
+    <li>Location and notification permissions can be turned off in Android settings.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>The app is meant for vehicle owners and is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted here with a new date, and mentioned in the app's What's new.</p>
+
+  <h2>Contact</h2>
+  <p>In the app: More → Report a problem.</p>
+
+  <footer><a href="index.html">Home</a><a href="terms.html">Terms</a></footer>
+</main>
+</body>
+</html>

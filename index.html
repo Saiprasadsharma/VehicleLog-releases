@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vehicle Log</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="A free, offline Android app to log fuel, mileage, services and trips for your car or bike.">
+<meta name="description" content="A free, offline Android app to log fuel, mileage, services, trips, documents and budgets for your car or bike.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
@@ -192,16 +192,18 @@ footer a { color: var(--muted); }
       <div>
         <p class="eyebrow">Android · free · offline</p>
         <h1>Every litre, every service, <em>every kilometre.</em></h1>
-        <p class="lede">Vehicle Log keeps your fill-ups, mileage, services and trips for your car or bike. Log a fill-up in seconds; it works out the rest. No account, no ads, and your data stays on your phone.</p>
+        <p class="lede">Vehicle Log keeps your fill-ups, mileage, services, trips and papers for your car or bike. Log a fill-up in seconds; it works out the rest, and tells you what's due next. No ads, and your data stays on your phone.</p>
         <div class="cta">
           <a class="btn" href="https://github.com/Saiprasadsharma/VehicleLog-releases/releases/latest/download/VehicleLog.apk">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9.2l3.3-3.3 1.4 1.4L12 16l-5.7-5.7 1.4-1.4 3.3 3.3V3ZM5 18h14v2H5v-2Z"/></svg>
             Download the APK
           </a>
-          <small>Android 8 or newer · about 11 MB</small>
+          <small>Android 8 or newer · about 13 MB</small>
         </div>
         <div class="facts">
           <span>Mileage tank to tank</span>
+          <span>Insurance PDF read for you</span>
+          <span>Fingerprint lock</span>
           <span>English · ಕನ್ನಡ</span>
           <span>Google Drive backup</span>
         </div>
@@ -209,7 +211,7 @@ footer a { color: var(--muted); }
 
       <div class="phone" role="img" aria-label="The fill-up screen: amount paid ₹2,500, price ₹110.91 per litre, 22.54 litres, odometer 9,190 km">
         <div class="screen">
-          <div class="bar"><div><b>Fill-up</b><span>Venue · Petrol</span></div><div class="scan"></div></div>
+          <div class="bar"><div><b>Fill-up</b><span>My car · Petrol</span></div><div class="scan"></div></div>
           <div class="amount"><small>AMOUNT PAID</small><div><i>₹</i>2,500</div></div>
           <div class="pills">
             <div class="pill"><span>Price</span><b>₹110.91/L</b></div>
@@ -223,7 +225,7 @@ footer a { color: var(--muted); }
             <small>Last: 9,030 km · +160 since</small>
             <div class="row"><span>Filled the tank completely</span><span class="switch"></span></div>
           </div>
-          <div class="card"><small>Pump</small><b>BPCL Hulimavu</b><small>Closest to you · 70 m</small></div>
+          <div class="card"><small>Pump</small><b>BPCL · Ring Road</b><small>Closest to you · 70 m</small></div>
           <div class="save">✓ Save fill-up · ₹2,500</div>
         </div>
       </div>
@@ -235,12 +237,15 @@ footer a { color: var(--muted); }
         <p>Built around Indian pumps, rupees and roads, for one rider or a family with a car and a bike.</p>
       </div>
       <div class="features">
-        <div class="feature"><h3>Fill-ups in seconds</h3><p>Type the amount; the price and litres follow. The nearest pump is picked for you, and a scanned receipt fills the form.</p></div>
-        <div class="feature"><h3>Real mileage</h3><p>Worked out full tank to full tank, in <code>km/L</code> or <code>L/100 km</code>, with your next fill-up predicted by date and distance.</p></div>
-        <div class="feature"><h3>Services and expenses</h3><p>Service bills split into items, insurance, tolls, parking, washes. Income too, if the vehicle earns.</p></div>
-        <div class="feature"><h3>Reminders that know the odometer</h3><p>Chain lube every 500 km, service at 38,500 km or on a date, PUC and insurance before they expire.</p></div>
-        <div class="feature"><h3>Trips</h3><p>Distance, cost, mileage and stops for each ride. Split the cost with friends when the trip is over.</p></div>
-        <div class="feature"><h3>FASTag and parts</h3><p>Balance and annual pass from your bank's SMS, plus tyre, chain and battery wear by kilometres.</p></div>
+        <div class="feature"><h3>Fill-ups in seconds</h3><p>Type the amount; the price and litres follow. The nearest pump and the way you usually pay are picked for you, and a scanned receipt fills the form. A fill-up that looks wrong is caught before it's saved.</p></div>
+        <div class="feature"><h3>Real mileage</h3><p>Worked out full tank to full tank, in <code>km/L</code> or <code>L/100 km</code>, with your next fill-up predicted. A tank well below your usual gets a heads-up.</p></div>
+        <div class="feature"><h3>What's due, together</h3><p>Reminders by kilometres or date, and parts by wear: tyres, battery, filters, brake fluid. Things due around the same time show as one visit, logged in one go.</p></div>
+        <div class="feature"><h3>Documents, always on you</h3><p>Insurance, PUC, RC and licence with their PDFs, even offline. Add the insurer's PDF and the policy details fill in. Renewals bought early are kept in order, behind a fingerprint lock if you like.</p></div>
+        <div class="feature"><h3>Budgets that look ahead</h3><p>A monthly budget, limits per category (fuel, service, insurance by the year), and a forecast: <i>at this pace, about ₹6,200 by month end</i>.</p></div>
+        <div class="feature"><h3>Reports worth reading</h3><p>Spending, mileage and fuel price trends, which pump is cheaper for the same fuel, this month against the last, and a summary picture to share.</p></div>
+        <div class="feature"><h3>Trips</h3><p>Distance, cost, mileage and stops for each ride, the route recorded if you want it, the cost split with friends, and one tap to ride the same route again.</p></div>
+        <div class="feature"><h3>FASTag</h3><p>Balance, tolls and the annual pass from your bank's SMS, in a passbook by day. A missed call to your bank checks the balance.</p></div>
+        <div class="feature"><h3>Tidy records</h3><p>Find entries with no pump or payment and fill them in together. <i>Check my data</i> spots typos, missed fill-ups and entries saved twice.</p></div>
       </div>
     </section>
 
@@ -253,8 +258,9 @@ footer a { color: var(--muted); }
         <dl class="ledger">
           <div><dt>Your records</dt><dd>On your phone only</dd></div>
           <div><dt>Backups</dt><dd>A hidden app folder in your own Google Drive, or a file you keep</dd></div>
-          <div><dt>Location</dt><dd>Used only to find the pump you're at</dd></div>
+          <div><dt>Location</dt><dd>Used to find the pump you're at, and to record a trip's route only if you turn that on</dd></div>
           <div><dt>Sign-in</dt><dd>Optional. Saves just your name and email</dd></div>
+          <div><dt>Lock</dt><dd>Optional fingerprint, face or PIN, for the whole app or just Documents</dd></div>
           <div><dt>Ads and tracking</dt><dd>None. Anonymous usage counts and crash reports only</dd></div>
         </dl>
       </div>
@@ -276,8 +282,9 @@ footer a { color: var(--muted); }
       <div class="head"><h2>Questions</h2></div>
       <div class="faq">
         <details><summary>Is it really free?</summary><p>Yes. No ads, no subscription, no paid features. It started as a personal logbook for a car and a bike.</p></details>
-        <details><summary>Does it work without internet?</summary><p>Everything works offline. Internet is only used for Drive backup, finding nearby pumps, sign-in and update checks.</p></details>
-        <details><summary>What happens to my data if I change phones?</summary><p>Turn on Google Drive backup, or save a backup file. On the new phone, install the app and restore from Drive or the file.</p></details>
+        <details><summary>Does it work without internet?</summary><p>Everything works offline, including your documents. Internet is only used for Drive backup, finding nearby pumps, road routes on trip maps, sign-in and update checks.</p></details>
+        <details><summary>What happens to my data if I change phones?</summary><p>Turn on Google Drive backup, or save a backup file. On the new phone, sign in with Google and the app finds your backup; it shows what the backup holds before restoring anything.</p></details>
+        <details><summary>Can I use it for more than one vehicle?</summary><p>Yes, a car and a bike or the whole family's. Each has its own logbook, reminders, budget and theme colour; documents like your licence are shared.</p></details>
         <details><summary>Why isn't it on the Play Store?</summary><p>It will be. Until then, releases are built and published straight from the source on GitHub, and the app updates itself.</p></details>
         <details><summary>Found a bug or have an idea?</summary><p>In the app, go to More → Report a problem. It fills in your app and phone details for you.</p></details>
       </div>

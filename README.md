@@ -27,16 +27,19 @@ Older versions and what changed in each: [Releases](https://github.com/Saiprasad
 - **Fill-ups**: real mileage (full tank to full tank), cost per km, next refuelling estimate. Scan the pump receipt instead of typing.
 - **Services & expenses**: with photos of bills, by type, by month.
 - **Reports**: spending, mileage trends, fuel prices, which pump is cheaper, and plain-language insights.
-- **Trips**: distance, time, trip cost, mileage, and splitting the cost with friends.
-- **Reminders**: service by km or date; insurance, PUC and licence expiry alerts.
-- **Documents**: insurance, PUC, RC and licence (PDF or photo) to show anywhere, even offline.
-- **Backup**: to your own Google Drive (a hidden app folder), or to a file.
+- **Trips**: distance, time, trip cost, mileage, the route recorded if you want it, splitting the cost with friends, and riding the same route again in one tap.
+- **Reminders and parts**: service by km or date; tyres, battery, filters and fluids by wear. Things due together show as one visit.
+- **Documents**: insurance, PUC, RC and licence (PDF or photo) to show anywhere, even offline. The insurer's PDF fills in the policy details. Optional fingerprint lock.
+- **Budgets**: monthly budget, limits per category, and a forecast for the month.
+- **FASTag**: balance, tolls and annual pass from the bank's SMS.
+- **Tidy records**: fill in missing pumps or payments in bulk, and "Check my data" for typos and double entries.
+- **Backup**: to your own Google Drive (a hidden app folder), or to a file, with a preview before restoring.
 
 ## Your data
 
 - Everything is stored on your phone.
 - Google Drive backup is optional and goes to a hidden folder only this app can see.
-- The update check only asks GitHub "what's the latest version?". Nothing about you or your vehicles is sent anywhere.
+- The update check only asks GitHub "what's the latest version?". Optional Google sign-in saves just your name and email. Nothing about your vehicles is sent anywhere.
 
 ## Problems or ideas?
 
